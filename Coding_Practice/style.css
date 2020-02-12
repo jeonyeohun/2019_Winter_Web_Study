@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  height: 1500px;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  top: 50px;
+  left: 50px;
+  font-size: 400%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+}
+.red_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #ff7979;
+}
+.contents {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+.blue_box {
+  width: 70%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border: solid #7ed6df 10px;
+  background-color: #7ed6df;
+  position: relative;
+}
+
+.yellow_box {
+  border: solid grey 10px;
+  width: 50%;
+  height: 100%;
+  background-color: #ffcc00;
+}
+.green_box {
+  background-color: #badc58;
+  width: 10%;
+  height: 40%;
+  top: 80%;
+  left: 53%;
+  position: absolute;
+}

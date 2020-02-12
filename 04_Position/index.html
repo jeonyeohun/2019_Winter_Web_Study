@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible content="ie=edge">
+  <title>Position</title>
+  <style>
+    body,
+    html {
+      /* this is default values */
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 400%;
+      background-color: red;
+    }
+
+    #boxOne {
+      /* style for "box" class*/
+      height: 300px;
+      width: 300px;
+      background-color: yellow;
+      position: static; /* static은 element에 붙이면 그곳에 머물러있는다 */
+    }
+
+    #boxTwo {
+      height: 300px;
+      width: 300px;
+      background-color: white;
+      position: fixed; /* the position with this property does not move.*/
+      top: 10px; /* 이 값을 통해서 고정될 위치를 정해줄 수 있다. top, bottom, right, left 다 사용가능*/
+    }
+
+    .abs-box {
+      width: 400px;
+      height: 400px;
+      background-color: yellow;
+      position: relative;
+    }
+
+    .abs-child {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      position: absolute;
+      /* position abolute 는 relative에 맞춰서 위치를 잡는다. relative가 없을 경우에는 본문 body에 맞춰서 위치를 잡는다.*/
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="boxOne">
+    <div class="box-child"></div>
+  </div>
+  <div id="boxTwo">
+    <div class="box-child"></div>
+  </div>
+  <div class="abs-box">
+    <div class="abs-child"></div>
+    <!-- div 안에 또 다른 div 이기 때문에 abs-child는 abs-box의 자녀가 된다.
+    position을 할 때, 부모가 되는 박스의 position을 relative 로 잡으면 하위
+    박스들은 부모박스에 맞춘 relative position을 취하게 된다.-->
+  </div>
+</body>
