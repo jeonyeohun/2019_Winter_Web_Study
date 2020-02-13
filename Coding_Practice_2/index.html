@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kokoa Tribe</title>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        background-color: #1c90ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .red_box {
+        display: flex;
+        background-color: #fe6c80;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 200px;
+        height: 200px;
+      }
+
+      .box {
+        display: flex;
+        background-color: #d8d8d8;
+        height: 50px;
+        width: 50px;
+      }
+      .box:hover:nth-child(2n) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red_box">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
