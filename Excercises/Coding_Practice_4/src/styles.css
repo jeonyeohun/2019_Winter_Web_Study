@@ -1,0 +1,91 @@
+html,
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0px;
+  border: 0px;
+}
+#top {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-color: #76c4c6;
+  justify-content: center;
+  align-items: center;
+}
+#bottom {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-color: #1cad9c;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+.circle_box {
+  display: flex;
+  height: 130px;
+  width: 90px;
+  align-items: center;
+  justify-content: space-around;
+  animation: 1s rotateCircle infinite ease-in-out;
+}
+.bar_box {
+  display: flex;
+  height: 200px;
+  width: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes expandBar {
+  10% {
+    transform: scaleY(2.5);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+
+.bar1 {
+  animation: 2s expandBar infinite ease-in-out 1s;
+}
+.bar2 {
+  animation: 2s expandBar infinite ease-in-out 1.1s;
+}
+.bar3 {
+  animation: 2s expandBar infinite ease-in-out 1.2s;
+}
+.bar4 {
+  animation: 2s expandBar infinite ease-in-out 1.3s;
+}
+.bar5 {
+  animation: 2s expandBar infinite ease-in-out 1.4s;
+}
+#bar {
+  width: 13px;
+  height: 37px;
+  background-color: white;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: white;
+}
