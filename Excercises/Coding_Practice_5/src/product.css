@@ -1,0 +1,70 @@
+.product {
+  margin: 5px;
+  background-color: white;
+  width: 390px;
+  border-radius: 10px;
+}
+
+.product__details {
+  margin: 18px;
+}
+.product__image {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__name {
+  color: #29282d;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Open Sans" -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 7px;
+}
+
+.product__rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fas.fa-star {
+  opacity: 100%;
+  color: #febe50;
+}
+
+.fas.fa-star .no-star {
+  opacity: 30%;
+  color: #000;
+}
+
+.product__price {
+  color: #29282d;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Open Sans" -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 7px;
+}
+
+.star__num {
+  margin-left: 8px;
+  opacity: 40%;
+}
+.product__rate-star {
+  display: flex;
+  font-family: "Open Sans" -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.product__description {
+  opacity: 30%;
+  margin-bottom: 20px;
+  font-family: "Open Sans" -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}

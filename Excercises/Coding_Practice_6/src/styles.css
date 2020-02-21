@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.screen {
+  width: 295px;
+  height: 600px;
+  border-radius: 50px;
+  border: 15px solid #f8f8ff;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 15px rgb(116, 116, 116);
+}
+
+.screen__header {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.screen__signin-info {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  width: 260px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+
+.signin-box {
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #c8c7c8;
+}
+
+.screen__signin-option {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 260px;
+  height: 35px;
+  font-size: 9px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.forgot-pwd {
+  text-align: right;
+  color: #ee919d;
+  font-weight: 600;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.remember-me__text {
+  margin-left: 3px;
+  color: #d1d1d1;
+  font-weight: 600;
+}
+::placeholder {
+  color: #c8c7c8;
+  font-weight: 600;
+  margin-left: 10px;
+  text-indent: 10px;
+}
+
+.screen__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 265px;
+  height: 140px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.btn__signin {
+  background-color: #e2283d;
+  border: none;
+  border-radius: 15px;
+  border-weight: 600;
+  height: 35px;
+  color: white;
+}
+
+.btns__sns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__fb {
+  background-color: #465a95;
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 110px;
+  color: white;
+  font-weight: 600;
+}
+
+.btns__or {
+  font-weight: 700;
+}
+
+.btn__tw {
+  background-color: #5ca2f2;
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 110px;
+  color: white;
+  font-weight: 600;
+}
+
+.screen__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 9px;
+  font-weight: 600;
+  color: #d1d1d1;
+  height: 30px;
+}
+
+.more__btn {
+  color: rgb(239, 147, 158);
+}
