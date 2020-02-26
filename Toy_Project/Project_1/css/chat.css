@@ -132,10 +132,6 @@
   margin-right: 15px;
 }
 
-.incoming-message {
-  align-self: flex-start;
-}
-
 .sent-message {
   align-self: flex-end;
 }
@@ -179,12 +175,39 @@
 }
 
 .incoming-message {
-  animation: incomingAnim 1s ease-out fowards;
+  align-self: flex-start;
+}
+
+.incoming-message {
+  animation: incomingAnim 0.5s ease-out forwards;
 }
 
 @keyframes sentAnimation {
   from {
+    opacity: 0;
+    transform: translateX(200px);
   }
   to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sent-message {
+  animation: sentAnimation 0.5s ease-out forwards;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 18px 36px -12px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 18px 36px -60px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 18px 36px -12px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   }
 }
