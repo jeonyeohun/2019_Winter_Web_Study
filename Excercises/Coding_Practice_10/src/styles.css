@@ -1,0 +1,180 @@
+@import "reset.css";
+
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  height: 240px;
+  width: 510px;
+  margin: 5px;
+}
+
+.background__insta {
+  position: relative;
+  height: 145px;
+  width: 195px;
+}
+
+.background__insta .hover-box {
+  position: absolute;
+  background-color: #28394a;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+.author {
+  margin-top: 2px;
+  color: #e94362;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.take-a-look {
+  margin-top: 15px;
+  background-color: #e94362;
+  border: none;
+  color: white;
+  font-size: 5px;
+}
+
+.background__insta .main-box {
+  position: absolute;
+  background-color: #b167bb;
+  background-image: url(https://image.flaticon.com/icons/svg/355/355975.svg);
+  background-size: 40%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background__insta:hover .hover-box {
+  opacity: 1;
+  left: 10px;
+  top: 10px;
+  transition: all 1s;
+}
+
+.background__twitter {
+  position: relative;
+  height: 145px;
+  width: 195px;
+}
+
+.background__twitter .main-box {
+  position: absolute;
+  background-color: #6d8fbd;
+  background-image: url(https://image.flaticon.com/icons/svg/355/355974.svg);
+  background-size: 40%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+}
+
+.background__twitter .hover-box {
+  position: absolute;
+  background-color: #28394a;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.background__twitter:hover .hover-box {
+  height: 30%;
+}
+
+.background__twitter:hover .main-box {
+  background-position-y: 25%;
+  transition: 0.5s ease-in-out;
+}
+
+.background__twitter .hover-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.background__twitter .hover-box__column-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.background__snapchat {
+  position: relative;
+  height: 145px;
+  width: 195px;
+  overflow: hidden;
+}
+
+.background__snapchat .hover-box {
+  position: absolute;
+  background-color: #ebd384;
+  background-image: url(https://image.flaticon.com/icons/svg/355/355985.svg);
+  background-size: 40%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+  transform-origin: 50% 20%;
+}
+
+.background__snapchat .main-box {
+  position: absolute;
+  height: 145px;
+  width: 195px;
+  background-color: #28394a;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu__column-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__column {
+  margin-bottom: 5px;
+}
+
+.background__snapchat:hover .hover-box {
+  transform: scale(0.4);
+
+  transition: 0.5s ease-in-out;
+}
